@@ -57,7 +57,7 @@ export default function About(){
           </p>
 
           {/* experience, speciality, focus */}
-          <div className="mt-6 grid grid-col-2 sm:grid-cols-3 grap-3 sm:gap-4 max-w-xl">
+          <div className="mt-6 grid grid-col-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-xl">
             {stats.map((item, i) => (
               <motion.div key={i} className="rounded-xl border-white/10 bg-white/5 px-4 py-3 text-center"
                 initial={{opacity:0, y:10}}
