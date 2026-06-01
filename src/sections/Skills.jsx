@@ -112,7 +112,7 @@ export default function Skills(){
   return(
     <section id="skills" ref={sectionRef} className="h-1/2 w-full flex flex-col items-center justify-center relative bg-black text-white overflow-hidden">
       {/* glowing blocks */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute sm:block hidden inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-0 w-75 h-75 rounded-full bg-linear-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8d2] opacity-20 blur-[120px] animate-pulse" />
         <div className="absolute bottom-1/4 right-0 w-75 h-75 rounded-full bg-linear-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8d2] opacity-20 blur-[120px] animate-pulse delay-500" />
       </div>

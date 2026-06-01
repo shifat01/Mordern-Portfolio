@@ -53,7 +53,7 @@ export default function Home(){
       <div className="relative z-10 h-full w-full max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2">
 
         {/* details section */}
-        <div className="flex flex-col justify-center h-full text-center lg:text-left relative mt-14 sm:mt-6">
+        <div className="flex flex-col justify-center h-full text-center lg:text-left relative -mt-5 sm:mt-6">
           <div className="w-full lg:pr-24 mx-auto max-w[48rem] lg:ml-30">
             <motion.div
               className="mb-3 text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white tracking-wide min-h-[1.6em]"
@@ -81,12 +81,12 @@ export default function Home(){
                   Shifat
                 </span>
               </motion.h1>
-              <motion.p className="mt-4 text-base sm:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0 hidden md:block"
+              <motion.p className="mt-4 text-base sm:text-lg text-gray-100 max-w-2xl mx-auto lg:mx-0 "
                 initial={{opacity:0, y: 20}}
                 animate={{opacity:1, y: 0}}
                 transition={{delay: 0.4, duration: 0.8}}
               >
-                I turn complex ideas into seamless, high-impact web experiences
+                Software Engineer specializing in the MERN stack, dedicated to building scalable, optimized web applications with clean code, architectural integrity, and seamless integration.
               </motion.p>
               <motion.div
                 className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-6"

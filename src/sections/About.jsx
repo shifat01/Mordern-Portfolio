@@ -51,15 +51,16 @@ export default function About(){
           <p className="mt-2 text-lg sm:text-xl text-white/90 font-semibold">
             Full Stack Developer
           </p>
-          <p className="sm:mt-4 hidden text-gray-300 leading-relaxed text-base sm:text-lg max-w-2xl md:max-w-3xl">
-            I build scalable, mordern applications with a strong focus on clean architechture, delightful ux, and performance. My tooklit spans JavaScript,
-            React, Next.Js, Node, MongoDB, Laravel, SQL, Tailwind CSS, and RestfulApI- bringing ideas to life from concept to production with robust APIs and smoth interfaces.
+          <p className="sm:mt-4  text-gray-300 leading-relaxed text-base sm:text-lg max-w-2xl md:max-w-3xl">
+            <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
+              I am a versatile Full-Stack Software Engineer and Computer Science student with expertise across multiple ecosystems. Proficient in both the MERN stack and Laravel/MySQL, I focus on architectural integrity, clean code, and building optimized, production-ready web applications that solve complex technical problems.
+            </p>
           </p>
 
           {/* experience, speciality, focus */}
-          <div className="mt-6 grid grid-col-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-xl">
+          <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-xl ">
             {stats.map((item, i) => (
-              <motion.div key={i} className="rounded-xl border-white/10 bg-white/5 px-4 py-3 text-center"
+              <motion.div key={i} className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 sm:py-1 text-center"
                 initial={{opacity:0, y:10}}
                 whileInView={{opacity:1, y:0}}
                 transition={{delay: 0.05 * i, duration:0.4}}
@@ -93,10 +94,7 @@ export default function About(){
           About Me
         </h3>
         <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore perferendis doloribus esse voluptates fugit beatae quae quia est totam. Lorem ipsum dolor sit amet.
-        </p>
-        <p className="mt-4 text-gray-400 text-base sm:text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloribus veniam deserunt officiis earum quia.
+            As a Full-Stack Engineer, I love two things: collaborating with great teams and crushing complex bugs. I enjoy diving deep into system diagnostics to figure out exactly how to make things run better. By mixing foundational system design with a smart, AI-driven workflow, I can build and scale web applications.
         </p>
       </motion.div>
      </div>
