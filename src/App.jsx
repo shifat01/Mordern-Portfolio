@@ -11,12 +11,14 @@ import Footer from './sections/Footer'
 import ParticlesBackground from './sections/components/ParticlesBackground'
 import CustomCursor from './sections/components/CustomCursor'
 import IntroAnimation from './sections/components/IntroAnimation'
+import MusicPlayer from './sections/components/MusicPlayer'
 
 const App = () => {
 
   const [introDone, setIntroDone] = React.useState(false);
   return (
     <>
+      <MusicPlayer/>
       {!introDone && <IntroAnimation onFinish={() => {setIntroDone(true)}}/>}
 
       {introDone && (

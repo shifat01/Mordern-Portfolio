@@ -92,11 +92,11 @@ export default function Projects(){
           My Work
         </h2>
 
-        <div className={`relative w-full flex-1 items-center justify-center ${isMobile ? "-mt-2": ""} sm:ml-70`}>
+        <div className={`relative w-full flex-1 items-center justify-center ${isMobile ? "-mt-2": ""}`}>
           {projects.map((project, idx) => (
             <div key={project.title}
-              className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ${activeIndex === idx ? "opacity-100 z-20": "opacity-0 z-0 sm:z-10"}`}
-              style={{width: "85%", maxWidth: "1200px"}}
+              className={`absolute w-[75%] md:w-[63%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ${activeIndex === idx ? "opacity-100 z-20": "opacity-0 z-0 sm:z-10"}`}
+              style={{ maxWidth: "1200px"}}
             >
               <AnimatePresence mode="wait">
                 {activeIndex === idx && (
@@ -118,13 +118,13 @@ export default function Projects(){
                 )}
               </AnimatePresence>
 
-              <div className={`relative sm:w-212 overflow-hidden bg-black/20 shadow-2xl
-                      md:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.7)] ${isMobile ? "mb-6 rounded-lg" : "mb-10 sm:mb-12 rounded-xl"} h--[62vh] sm:h-[66vh]
-                   `}
+              <div className={`relative overflow-hidden bg-black/20 shadow-2xl
+                      md:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.7)] ${isMobile ? "mb-6 rounded-lg" : "mb-10 sm:mb-12 rounded-xl"} h-[62vh] sm:h-[66vh]
+                `}
                 style={{zIndex:10, transition: "box-shadow 250ms ease"}}
               >
                 <img src={project.image} alt={project.title}
-                  className=" h-full object-cover drop-shadow-xl md:drop-shadow-2xl"
+                  className=" h-full w-full object-cover drop-shadow-xl md:drop-shadow-2xl"
                   style={{
                     position: "relative",
                     zIndex: 10,
@@ -148,7 +148,7 @@ export default function Projects(){
           ))}
         </div>
 
-        <div className={`absolute ${isMobile ? "bottom-20": "bttom-10"}`}>
+        <div className={`absolute ${isMobile ? "bottom-20": "bottom-3"}`}>
           <a href={activeProject?.link}
             target="_blank"
             rel="noopener noreferrer"
